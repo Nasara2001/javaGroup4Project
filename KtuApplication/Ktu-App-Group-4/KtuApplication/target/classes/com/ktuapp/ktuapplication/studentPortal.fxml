@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="503.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ktuapp.ktuapplication.StudentPortalController">
+   <top>
+      <AnchorPane prefHeight="56.0" prefWidth="600.0" style="-fx-background-color: #0098CE;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="224.0" layoutY="20.0" text="How to access student portal" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="26.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="71.0" fitWidth="181.0" layoutX="-1.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/ktulogo1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="272.0" layoutY="14.0" text="Register Courses">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font></Label>
+            <Label fx:id="lblcourse1" layoutX="29.0" layoutY="31.0" prefHeight="26.0" prefWidth="565.0" text="Label">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font></Label>
+            <Label fx:id="lblcourse2" layoutX="29.0" layoutY="57.0" prefHeight="26.0" prefWidth="565.0" text="Label">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font></Label>
+            <Label fx:id="lblcourse3" layoutX="29.0" layoutY="83.0" prefHeight="31.0" prefWidth="566.0" text="Label">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font></Label>
+            <Label fx:id="lblcourse4" layoutX="29.0" layoutY="109.0" prefHeight="31.0" prefWidth="561.0" text="Label">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font></Label>
+            <Label fx:id="lblcourse5" layoutX="29.0" layoutY="135.0" prefHeight="26.0" prefWidth="565.0" text="Label">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font></Label>
+            <Label fx:id="lblcourse6" layoutX="29.0" layoutY="161.0" prefHeight="26.0" prefWidth="565.0" text="Label">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font></Label>
+            <Label layoutX="286.0" layoutY="213.0" text="Check Results">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font></Label>
+            <Label fx:id="lblresult1" layoutX="29.0" layoutY="243.0" prefHeight="27.0" prefWidth="555.0" text="Label">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblresult2" layoutX="29.0" layoutY="270.0" prefHeight="27.0" prefWidth="555.0" text="Label">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblresult3" layoutX="29.0" layoutY="297.0" prefHeight="27.0" prefWidth="555.0" text="Label">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblresult4" layoutX="29.0" layoutY="324.0" prefHeight="27.0" prefWidth="555.0" text="Label">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="37.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="portalBackButton" layoutX="280.0" layoutY="2.0" mnemonicParsing="false" onAction="#portalBack" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #0098CE;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

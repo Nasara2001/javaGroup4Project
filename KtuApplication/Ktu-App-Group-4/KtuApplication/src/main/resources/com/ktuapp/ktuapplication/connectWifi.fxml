@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ktuapp.ktuapplication.WifiConfigController">
+   <top>
+      <AnchorPane prefHeight="55.0" prefWidth="600.0" style="-fx-background-color: #0098CE;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="244.0" layoutY="11.0" text="WIFI ASSIST">
+               <font>
+                  <Font name="Arial Bold" size="29.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5260663507109005" focusDistance="-0.011494252873563204" proportional="false" radius="0.22413793103448276">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.007662835249042145">
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <ImageView fitHeight="56.0" fitWidth="157.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/ktulogo1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="32.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="wifiBackButton" layoutX="274.0" layoutY="2.0" mnemonicParsing="false" onAction="#wifiBack" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: #0098CE;" text="Back" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+         </children></AnchorPane>
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ffffff;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lblPawword1" layoutX="82.0" layoutY="125.0" prefHeight="27.0" prefWidth="345.0" text="label">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font></Label>
+            <Label fx:id="lblPawword2" layoutX="82.0" layoutY="158.0" prefHeight="27.0" prefWidth="346.0" text="label">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font></Label>
+            <Label fx:id="txtwifi1" layoutX="43.0" layoutY="193.0" prefHeight="26.0" prefWidth="503.0" text="Label">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font></Label>
+            <Label fx:id="txtwifi2" layoutX="43.0" layoutY="219.0" prefHeight="25.0" prefWidth="503.0" text="Label">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font></Label>
+            <Label fx:id="txtwifi3" layoutX="43.0" layoutY="247.0" prefHeight="23.0" prefWidth="514.0" text="Label">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font></Label>
+            <ImageView fitHeight="128.0" fitWidth="196.0" layoutX="155.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/wifi.png" />
+               </image></ImageView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

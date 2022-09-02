@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ktuapp.ktuapplication.WelcomeScreenController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0098CE;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="studentPortalButton" layoutX="15.0" layoutY="26.0" mnemonicParsing="false" onAction="#portal" prefHeight="80.0" prefWidth="150.0" style="-fx-background-color: #ffffff;" text="How to Aceess &#10;Student Portal" textAlignment="CENTER" textFill="#28326b">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></Button>
+            <Button fx:id="vleAssistanceButton" layoutX="14.0" layoutY="120.0" mnemonicParsing="false" onAction="#vle" prefHeight="80.0" prefWidth="150.0" style="-fx-background-color: #ffffff;" text="VLE Assistance" textFill="#28326b">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font></Button>
+            <Button fx:id="connectToWifiButton" layoutX="14.0" layoutY="215.0" mnemonicParsing="false" onAction="#wifi" prefHeight="80.0" prefWidth="150.0" style="-fx-background-color: #ffffff;" text="Connect to KTU&#10; WIFI" textAlignment="CENTER" textFill="#28326b">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font></Button>
+            <Label layoutX="34.0" layoutY="3.0" prefHeight="23.0" prefWidth="152.0" text="Get help on.....">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="302.0" text="Didn't see your problem solotion?" />
+            <Button fx:id="requestButton" layoutX="33.0" layoutY="320.0" mnemonicParsing="false" onAction="#request" text="Send question request" />
+         </children></AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="173.0" fitWidth="180.0" layoutX="97.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/ktulogo2.png" />
+               </image>
+            </ImageView>
+            <TextArea editable="false" layoutX="-1.0" layoutY="208.0" opacity="0.63" prefHeight="140.0" prefWidth="405.0" text="This Is an application where student can get help in&#10;accessing their student portal, how to register and login&#10;to VLE and Connectto KTU students WIFI">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </TextArea>
+         </children></AnchorPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="54.0" prefWidth="600.0" style="-fx-background-color: #0098CE;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="182.0" layoutY="10.0" prefHeight="35.0" prefWidth="412.0" text="WELCOME TO KTU APP" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="31.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="61.0" fitWidth="156.0" layoutX="-1.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/ktulogo1.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnAdmin" layoutX="548.0" layoutY="2.0" mnemonicParsing="false" onAction="#adminPanel" text="Admin" />
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
